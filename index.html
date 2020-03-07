@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 id="title">Survey Form</h1>
+	<p id="description">How do you like survey forms?</p>
+	<form id="survey-form">
+		<label for="name" id="name-label">Name
+    <input type="text" id="name" required placeholder="Jack Milton"></label>
+    <label for="email" id="email-label" >What's Your Email address?
+    <input type="email" id="email" required placeholder="jackmilton@example.com"></label>
+    <label for="number" id="number-label">How old are you?</label>
+    <input type="number" id="number" min="6" max="112" placeholder="45">
+    <label for="dropdown">What version of sea-monkeys have you had first?</label>
+    <select id="dropdown">
+      <option>None (never had)</option>
+      <option>Sea-Monkeys</option>
+      <option>Aqua Dragons</option>
+    </select>
+    <p>What version of sea-monkeys have you had first?</p>
+    <label>None(never had)</label>
+    <input type="radio" name="whichone" value="none">
+    <textarea placeholder="I would like to say also that..."></textarea>
+    <button type="submit" id="submit">Submit</button>
+    
+  </form>
+	<script src="script.js">
+	</script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+	</script>
+</body>
+
 </html>
